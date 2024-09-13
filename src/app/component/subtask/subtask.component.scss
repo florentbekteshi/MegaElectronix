@@ -1,0 +1,73 @@
+.title__progress{
+  gap: 17px;
+}
+.title{
+  font-size: 20px;
+  color: '#030929';
+  font-weight: 500;
+}
+.progress-item{
+  width: 100px;
+  height: 10px;
+}
+.font-size-14{
+  font-size: 14px;
+}
+.subTask p:nth-child(1){
+  font-size: 12px;
+  color: #687196;
+  padding: 8px 0px 6px 8px;
+}
+.border-task{
+  border: 1px solid #E9EEF9;
+}
+.subTask__list p{
+  font-size: 14px;
+  color: #687196;
+}
+.subTask{
+  border: 1px solid #E9EEF9;
+  border-radius: 5px;
+}
+.subTask span{
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  border-radius: 50%;
+  background-color: #E9EEF9;
+}
+.subTask__list:hover{
+  background-color: #F1F3F8;
+  transition: .4s;
+  cursor: pointer;
+}
+.subTask button{
+  background: none;
+  border: none
+}
+.inputEdit{
+  height: 21px;
+  font-size: 13px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+  border: 1px solid #707070;
+  width: 100%;
+}
+.addInput{
+  height: 32px;
+  font-size: 13px;
+  width: 100%;
+}
+.subTask__button{
+  padding: 12px 0px 11px 16px;
+  width: 100%;
+  border-top: 1px solid #E9EEF9 !important;
+}
+.subTask__button p{
+  font-size: 14px;
+  color: #687196;
+}
+.subTask__button:hover{
+  background: #F1F3F8 !important;
+  cursor: pointer;
+}
+

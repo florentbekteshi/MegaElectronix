@@ -1,0 +1,62 @@
+.ask__logic{
+  padding: 10px 12px 7px 12px;
+  background-color: #F2F4FF;
+  border-radius: 6px;
+}
+.ask__logic p{
+  font-size: 14px;
+  color: #687196;
+}
+.margin-bottom{
+  margin-bottom: 9px;
+}
+.text-color{
+  color: #687196;
+}
+.attribute{
+  gap: 82px;
+}
+.attribute-list p{
+  font-size: 14px;
+}
+.attribute-item{
+  flex: 2;
+  padding-bottom: 50px;
+}
+.attribute-item input{
+  border: 1px solid #707070;
+  padding: 0;
+  font-size: 14px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+  padding-left: 8px;
+  color: #030929;
+}
+.attribute-item p{
+  margin-bottom: 5px;
+  width: 61px;
+  height: 22px;
+  text-align: center;
+  border-radius: 5px;
+  color: #B13600;
+  font-size: 14px;
+  background-color: #FCEEB5;
+}
+.attribute-item span{
+  font-size: 14px;
+  width: 100%;
+  display: flex;
+  padding-left: 5px;
+  color: #687196;
+}
+.attribute-item span:hover{
+  background-color: #F1F3F8;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.attribute-item input:placeholder{
+  color: #A4AAC0;
+}
+.attribute__editList{
+  height: 24px;
+  margin-bottom: 7px;
+}

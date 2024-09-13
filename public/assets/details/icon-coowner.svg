@@ -1,0 +1,7 @@
+<svg id="icon-coowner" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <path id="Path" d="M0,0H16V16H0Z" fill="none"/>
+  <path id="Path-2" data-name="Path" d="M0,2.667A2.667,2.667,0,1,0,2.667,0,2.667,2.667,0,0,0,0,2.667" transform="translate(3.333 2)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+  <path id="Path-3" data-name="Path" d="M0,4V2.667A2.667,2.667,0,0,1,2.667,0H5.333A2.667,2.667,0,0,1,8,2.667V4" transform="translate(2 10)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+  <path id="Path-4" data-name="Path" d="M0,0A2.667,2.667,0,0,1,2.005,2.583,2.667,2.667,0,0,1,0,5.167" transform="translate(10.667 2.087)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+  <path id="Path-5" data-name="Path" d="M2,3.9V2.567A2.667,2.667,0,0,0,0,0" transform="translate(12 10.1)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+</svg>

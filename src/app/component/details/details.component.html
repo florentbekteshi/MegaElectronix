@@ -1,0 +1,46 @@
+<div class="py-4 px-4">
+  <div class="d-flex align-items-center gap-2 ask__logic">
+    <app-icon
+    [name]="'icon-logicpilot'"
+    [alt]="'icon-logicpilot'"
+    [folder]="'assets/details'"
+    [size]="'medium'"
+  />
+    <p>Ask Logic Pilot to generate subtasks or to summarize comments</p>
+  </div>
+</div>
+
+<div class="px-4 d-flex attribute">
+  <div class="attribute-list">
+    <div class="d-flex gap-1 margin-bottom align-items-center" *ngFor="let attribute of attributeList">
+      <app-icon
+      [name]="attribute.icon"
+      [alt]="attribute.icon"
+      [folder]="'assets/details'"
+      [size]="'large'"
+    />
+      <p>{{ attribute.name }}</p>
+    </div>
+  </div>
+  <div class="attribute-item">
+    <p>Unpaid</p>
+    <div class="attribute__editList w-100" *ngFor="let item of editList">
+      <ng-container *ngIf="editingId === item.id; else displayMode">
+        <input
+          class="form-control"
+          [(ngModel)]="newParagraph"
+          (blur)="onBlur(item.id)"
+          (keydown)="onEnter($event, item.id)"
+          [attr.placeholder]="item.placeholder || 'Enter value'"
+          [type]="item.type === 'number' ? 'number' : 'text'"
+        />
+      </ng-container>
+      <ng-template #displayMode>
+        <span class="text-color" (click)="onEdit(item.id, item.paragraph)">
+          {{ item.paragraph || item.placeholder }}
+        </span>
+      </ng-template>
+    </div>
+  </div>
+</div>
+<app-subtask></app-subtask>

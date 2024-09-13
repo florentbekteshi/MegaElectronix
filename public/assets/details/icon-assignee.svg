@@ -1,0 +1,5 @@
+<svg id="icon-assignee" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <path id="Path" d="M0,0H16V16H0Z" fill="none"/>
+  <path id="Path-2" data-name="Path" d="M0,2.667A2.667,2.667,0,1,0,2.667,0,2.667,2.667,0,0,0,0,2.667" transform="translate(5.333 2)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+  <path id="Path-3" data-name="Path" d="M0,4V2.667A2.667,2.667,0,0,1,2.667,0H5.333A2.667,2.667,0,0,1,8,2.667V4" transform="translate(4 10)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+</svg>

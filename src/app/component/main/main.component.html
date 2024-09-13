@@ -1,0 +1,40 @@
+<div class="pb-4 main">
+  <div>
+    <div class="py-3 ps-4 border-custom title">
+      <h1>Mega Electronix</h1>
+      <p>Edit task</p>
+    </div>
+    <div class="d-flex flex-wrap wrap py-3 tabItem ps-4 border-custom">
+      <ul class="nav d-flex gap-2">
+        <li class="nav-item" *ngFor="let tab of tabsItem">
+          <button
+            [class.active]="activeTab === tab.name"
+            (click)="setActiveTab(tab.name)"
+            class="nav-button d-flex align-items-center"
+          >
+            <app-icon
+              [name]="tab.icon"
+              [alt]="tab.icon"
+              [folder]="'assets/tabs'"
+            />
+            <p>{{ tab.name }}</p>
+          </button>
+        </li>
+      </ul>
+    </div>
+    <div class="tab-content">
+      <ng-container *ngIf="activeTab === 'Details'">
+        <app-details></app-details>
+      </ng-container>
+      <ng-container *ngIf="activeTab === 'Activity'">
+        <app-activity></app-activity>
+      </ng-container>
+      <ng-container *ngIf="activeTab === 'Comments'">
+        <app-comments></app-comments>
+      </ng-container>
+      <ng-container *ngIf="activeTab === 'Attachments'">
+        <app-attachments></app-attachments>
+      </ng-container>
+    </div>
+  </div>
+</div>

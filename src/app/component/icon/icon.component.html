@@ -1,0 +1,12 @@
+<img
+  *ngIf="name"
+  [attr.src]="src"
+  [attr.alt]="alt || name"
+  [ngStyle]="{
+    width: dimensions.width,
+    height: dimensions.height,
+    filter: color ? 'invert(1)' : ''
+  }"
+  [style.fill]="color"
+  class="icon"
+/>

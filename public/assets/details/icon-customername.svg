@@ -1,0 +1,8 @@
+<svg id="icon-customername" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <path id="Path" d="M0,0H16V16H0Z" fill="none"/>
+  <path id="Path-2" data-name="Path" d="M0,2A2,2,0,0,1,2,0h8a2,2,0,0,1,2,2V8.667a2,2,0,0,1-2,2H2a2,2,0,0,1-2-2Z" transform="translate(2 2.667)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+  <path id="Path-3" data-name="Path" d="M0,1.333A1.333,1.333,0,1,0,1.333,0,1.333,1.333,0,0,0,0,1.333" transform="translate(4.667 5.333)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+  <path id="Path-4" data-name="Path" d="M0,.333H1.333" transform="translate(10 5)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+  <path id="Path-5" data-name="Path" d="M0,.333H1.333" transform="translate(10 7.667)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+  <path id="Path-6" data-name="Path" d="M0,.333H6.667" transform="translate(4.667 10.333)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+</svg>

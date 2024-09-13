@@ -1,0 +1,82 @@
+<div class="border-custom">
+  <div class="mx-4 pb-2 d-flex align-items-center title__progress">
+    <p class="mb-0 title">Subtask</p>
+    <div class="d-flex align-items-center gap-2">
+      <div class="progress progress-item">
+        <div
+          class="progress-bar"
+          role="progressbar"
+          [style.width.%]="calculateWidth()"
+          aria-valuemin="0"
+          aria-valuemax="100"
+        ></div>
+      </div>
+      <p class="font-size-14">
+        {{ completedSubTasksCount }}/{{ totalSubTasksCount }}
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="mx-4 my-4 subTask">
+  <div class="border-task">
+    <p>Subtask name</p>
+  </div>
+  <div
+    class="d-flex gap-2 align-items-center px-2 py-2 border-task subTask__list"
+    *ngFor="let task of subTasks"
+  >
+    <span
+      (click)="triggerCompleted(task.id)"
+      class="d-flex justify-content-center align-items-center"
+    >
+      <ng-container *ngIf="task.completed">
+        <app-icon
+          [name]="'icon-checkmark'"
+          [alt]="'icon-checkmark'"
+          [folder]="'assets/subtask'"
+          [size]="'ultraSmall'"
+        ></app-icon>
+      </ng-container>
+    </span>
+
+    <ng-container *ngIf="!task.isEditing; else editTemplate">
+      <p (click)="editTask(task)">{{ task.desc }}</p>
+    </ng-container>
+
+    <ng-template #editTemplate>
+      <input
+        type="text"
+        class="form-control inputEdit"
+        [(ngModel)]="task.desc"
+        (blur)="saveTask(task)"
+        (keydown.enter)="saveTask(task)"
+        autofocus
+      />
+    </ng-template>
+  </div>
+
+  <div *ngIf="addNewSubtask" class="px-2 py-2">
+    <input
+      type="text"
+      class="form-control addInput"
+      #subTaskInput
+      [(ngModel)]="newSubTaskDesc"
+      placeholder="Enter new subtask"
+      (keyup.enter)="addSubTask()"
+    />
+  </div>
+
+  <button
+    (click)="addSubTask()"
+    class="d-flex align-items-center gap-1 subTask__button"
+  >
+    <app-icon
+      [name]="'icon-addsubtask'"
+      [alt]="'icon-addsubtask'"
+      [folder]="'assets/subtask'"
+      [size]="'ultraSmall'"
+    ></app-icon>
+    <p>Add Subtask</p>
+  </button>
+</div>
